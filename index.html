@@ -1,11 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Welcome to My GitHub Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="images/profileImage_imran.jpg">
+  <title>Muhammad Asad</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0055A4',
+            secondary: '#1D7ED6',
+            accent: '#9EBBDC',
+            dark: '#003366',
+            light: '#1973d8',
+            grey: '#6B7280'
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body>
-  <h1>Muhammad Asad</h1>
-  <p>This is my personal website hosted on GitHub Pages.</p>
+
+<body class="bg-gray-100 text-dark font-sans">
+  <!-- Top Navigation Bar -->
+  <nav class="bg-primary text-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center space-x-4">
+        <img src="images/profileImage_imran.jpg" alt="Muhammad Asad" class="w-10 h-10 rounded-full">
+        <span class="font-bold text-lg">Muhammad Asad</span>
+      </div>
+      <div class="space-x-4 hidden md:flex">
+        <button onclick="showSection('about')" class="hover:underline">About</button>
+        <button onclick="showSection('achievements')" class="hover:underline">Achievements</button>
+        <button onclick="showSection('cv')" class="hover:underline">Experience</button>
+        <button onclick="showSection('projects')" class="hover:underline">Projects</button>
+        <button onclick="showSection('publications')" class="hover:underline">Publications</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content Sections -->
+  <main class="max-w-7xl mx-auto px-4 py-8">
+    <section id="about" class="content-section">
+      <h1 class="text-3xl font-bold text-primary mb-4">About Me</h1>
+      <p>Hi, I’m Muhammad Asad, a researcher in Information Engineering based in Italy...</p>
+      <!-- Truncated for clarity; paste full content here -->
+    </section>
+
+    <section id="achievements" class="content-section hidden">
+      <h1 class="text-3xl font-bold text-primary mb-4">Achievements</h1>
+      <!-- Achievements content here -->
+    </section>
+
+    <section id="cv" class="content-section hidden">
+      <h1 class="text-3xl font-bold text-primary mb-4">Curriculum Vitae</h1>
+      <!-- CV content here -->
+    </section>
+
+    <section id="projects" class="content-section hidden">
+      <h1 class="text-3xl font-bold text-primary mb-4">Projects</h1>
+      <!-- Projects content here -->
+    </section>
+
+    <section id="publications" class="content-section hidden">
+      <h1 class="text-3xl font-bold text-primary mb-4">Publications</h1>
+      <!-- Publications content here -->
+    </section>
+  </main>
+
+  <!-- Script to toggle section visibility -->
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.content-section').forEach(sec => sec.classList.add('hidden'));
+      document.getElementById(id).classList.remove('hidden');
+    }
+  </script>
 </body>
+
 </html>
+
 
