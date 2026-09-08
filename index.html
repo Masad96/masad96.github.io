@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/png" href="assests/images/Dr_Asad.webp">
+  <link rel="icon" type="image/webp" href="assets/images/Dr_Asad.webp">
   <title>Muhammad Asad | SPINE AI Lab</title>
   <meta name="description" content="Portfolio of Muhammad Asad, SPINE AI Lab: Signal Processing, Neural Engineering, and Structural Health Monitoring." />
 
@@ -46,6 +46,14 @@
     .academic-item{border-left:4px solid var(--primary);background:var(--surface-soft);border-radius:.8rem;padding:1rem 1.15rem;height:100%}
     .search-box{max-width:520px;border-radius:999px;padding:.7rem 1rem;border:1px solid var(--border);background:var(--surface);color:var(--text)}
     .empty-note{border:1px dashed var(--border);border-radius:.8rem;padding:1.25rem;color:var(--muted);background:var(--surface-soft)}
+    .hero-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.85rem;margin:1.6rem 0}
+    .stat-card{background:var(--surface-soft);border:1px solid var(--border);border-radius:1rem;padding:1rem}
+    .stat-card strong{display:block;font-family:'Saira Extra Condensed',sans-serif;font-size:1.75rem;line-height:1;color:var(--primary-dark)}
+    .stat-card span{font-size:.8rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.05em}
+    .quick-actions{display:flex;gap:.65rem;flex-wrap:wrap}
+    .publication-item{border-left:4px solid var(--primary);padding:.85rem 1rem;background:var(--surface-soft);border-radius:.55rem;margin-bottom:.85rem}
+    .publication-item .pub-meta{font-size:.83rem;color:var(--muted)}
+    .research-card{border:1px solid var(--border);border-radius:1rem;padding:1.25rem;height:100%;background:var(--surface)}
     #scrollProgress{position:fixed;top:0;left:0;height:4px;background:var(--primary);width:0;z-index:2000}
     .floating-tools{position:fixed;right:1.1rem;bottom:1.1rem;z-index:1100;display:flex;flex-direction:column;gap:.55rem}
     .floating-tools button{width:2.85rem;height:2.85rem;border:0;border-radius:50%;background:var(--primary);color:#fff;box-shadow:var(--shadow)}
@@ -79,7 +87,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="sideNav">
     <div class="container-fluid flex-lg-column">
       <a class="navbar-brand d-flex align-items-center gap-2 py-3" href="#page-top">
-        <img class="img-profile rounded-circle d-none d-lg-block" src="assests/images/Dr_Asad.webp" alt="Profile" onerror="this.style.display='none'"/>
+        <img class="img-profile rounded-circle d-none d-lg-block" src="assets/images/Dr_Asad.webp" alt="Portrait of Muhammad Asad" onerror="this.style.display='none'"/>
 
 
         
@@ -116,7 +124,17 @@
       <div class="container">
         <h1 class="mb-0"><strong>Muhammad <span class="text-primary">Asad</span></strong></h1>
         <div class="subheading mb-3">Signal Processing, Neural Engineering, Structural Health Monitoring</div>
-        <p class="lead mb-4">I work at the intersection of intelligent signal processing and applied machine learning. My focus areas include brain and neural interfaces, vibration based monitoring of steel bridges, and robust decision systems that connect data to action.</p>
+        <p class="lead mb-3">I work at the intersection of intelligent signal processing and applied machine learning. My focus areas include neural interfaces, vibration-based monitoring of railway steel bridges, and robust decision systems that connect data to action.</p>
+        <div class="hero-grid" aria-label="Professional highlights">
+          <div class="stat-card"><strong>3</strong><span>Research domains</span></div>
+          <div class="stat-card"><strong>5+</strong><span>Applied projects</span></div>
+          <div class="stat-card"><strong>3</strong><span>Student levels</span></div>
+          <div class="stat-card"><strong>10+</strong><span>Certified courses</span></div>
+        </div>
+        <div class="quick-actions mb-4">
+          <a class="btn btn-primary" href="#projects"><i class="fa-solid fa-flask me-2"></i>Explore projects</a>
+          <a class="btn btn-outline-primary" href="#contact"><i class="fa-solid fa-paper-plane me-2"></i>Discuss collaboration</a>
+        </div>
         <div>
           <span class="tag">Digital Signal Processing</span>
           <span class="tag">Digital Image Processing</span>
@@ -134,13 +152,13 @@
     <section class="resume-section" id="research">
       <div class="container">
         <h2 class="mb-4">Research</h2>
-        <p>SPINE-AI LAB: Signal Processing Intelligence & Neural Engineering.</p>
-        <ul>
-          <li><strong>Digital Signal Processing</strong>: Neural signals, acceleometers, LiDAR, mmWave, RFs. Structural Signals, Vibration, LiDAR PCs, Acoustic Emission, Strain, Radio Frequencies.</li>
-          <li><strong>Intelligence</strong>: AI and statistical modeling for high dimensional data and predictive insights across neural and structural systems.</li>
-          <li><strong>Neural Engineering</strong>: Neuroprosthetics, brain computer interfaces, diagnostic tools (MRI, CT Scan etc), neurorehabilitation technologies.</li>
-          <li><strong>Structural Health Monitoring</strong>: Damage detection and prognostics for bridges, structures, and energy assets using signal driven methods.</li>
-        </ul>
+        <p class="text-secondary mb-4">SPINE-AI Lab: Signal Processing Intelligence and Neural Engineering in Artificial Intelligence.</p>
+        <div class="row g-3">
+          <div class="col-md-6"><article class="research-card"><h3 class="h4">Digital Signal Processing</h3><p class="mb-0">Neural, vibration, LiDAR, mmWave, acoustic-emission, strain, and radio-frequency signals for modelling and monitoring.</p></article></div>
+          <div class="col-md-6"><article class="research-card"><h3 class="h4">Intelligent Systems</h3><p class="mb-0">AI and statistical modelling for high-dimensional data, anomaly detection, predictive insight, and decision support.</p></article></div>
+          <div class="col-md-6"><article class="research-card"><h3 class="h4">Neural Engineering</h3><p class="mb-0">Brain-computer interfaces, neuroprosthetics, biomedical imaging, and neurorehabilitation technologies.</p></article></div>
+          <div class="col-md-6"><article class="research-card"><h3 class="h4">Structural Health Monitoring</h3><p class="mb-0">Signal-driven damage detection and condition prognostics for bridges, structures, and energy assets.</p></article></div>
+        </div>
       </div>
     </section>
 
@@ -155,7 +173,7 @@
           <div>
             <h3 class="mb-0">Assistant Professor</h3>
             <div class="subheading">Beaconhouse National University, School of Computer and Information Technology, Lahore, PAKISTAN</div>
-            <p>Feature engineering, sensor integration, and deep models for disaster management & monitoring with anomaly detection and fuzzy rule based early alerting.</p>
+            <p>Teaching and supervising applied AI and computing projects, including sensor-driven disaster monitoring and decision-support systems.</p>
           </div>
           <div class="text-md-end text-secondary">Aug 2025–Present</div>
         </div>
@@ -165,7 +183,7 @@
           <div>
             <h3 class="mb-0">Lead Researcher</h3>
             <div class="subheading">SPINE AI Lab, Signal Processing Intelligence & Neural Engineering in Artificial Intelligence, Lahore, PAKISTAN</div>
-            <p>Feature engineering, sensor integration, and deep models for disaster management & monitoring with anomaly detection and fuzzy rule based early alerting.</p>
+            <p>Leading research across signal processing, neural engineering, structural health monitoring, and data-driven early-warning systems.</p>
           </div>
           <div class="text-md-end text-secondary">Aug 2025–Present</div>
         </div>
@@ -174,7 +192,7 @@
           <div>
             <h3 class="mb-0">Graduate Researcher</h3>
             <div class="subheading">ISR Lab, University of L'Aquila, L'Aquila, ITALY</div>
-            <p>Feature engineering and deep models for railway steel bridge monitoring with anomaly detection and fuzzy rule based alerting.</p>
+            <p>Contributed to research projects and technical development activities at BIOMISA Lab.</p>
           </div>
           <div class="text-md-end text-secondary">April 2022–Present</div>
         </div>
@@ -199,9 +217,9 @@
 
         <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
           <div>
-            <h3 class="mb-0">Lecturert</h3>
+            <h3 class="mb-0">Lecturer</h3>
             <div class="subheading">Govt Post Graduate College, Civil Lines Lahore, PAKISTAN</div>
-            <p>Feature engineering and deep models for railway steel bridge monitoring with anomaly detection and fuzzy rule based alerting.</p>
+            <p>Taught computing courses and supported student learning in programming and software-engineering fundamentals.</p>
           </div>
           <div class="text-md-end text-secondary">Oct 2015– Oct 2016</div>
         </div>
@@ -211,7 +229,7 @@
           <div>
             <h3 class="mb-0">Research Assistant</h3>
             <div class="subheading">BIOMISA Lab, NUST,Islamabad, PAKISTAN</div>
-            <p>Feature engineering and deep models for railway steel bridge monitoring with anomaly detection and fuzzy rule based alerting.</p>
+            <p>Developed software solutions and contributed to technical project implementation.</p>
           </div>
           <div class="text-md-end text-secondary">July 2014–Aug 2017</div>
         </div>
@@ -251,7 +269,7 @@
         <div class="subheading">MS in Computer Software Engineering</div>
         <p>Thesis: Prediction of membrane protein types with pseudo amino acid compositions and dipeptides.</p>
       </div>
-      <div class="text-md-end text-secondary">2017</div>
+      <div class="text-md-end text-secondary">Year available on request</div>
     </div>
 
     <div class="d-flex flex-column flex-md-row justify-content-between">
@@ -259,7 +277,7 @@
         <h4 class="mb-0">University of the Punjab, Pakistan</h4>
         <div class="subheading">BS in Software Engineering</div>
       </div>
-      <div class="text-md-end text-secondary">2012</div>
+      <div class="text-md-end text-secondary">Year available on request</div>
     </div>
 
 
@@ -357,7 +375,6 @@
         <div>
           <div class="subheading mb-2">Tools</div>
           <span class="tag">GitHub</span>
-          <span class="tag">Jekyll</span>
           <span class="tag">Google Colab</span>
           <span class="tag">Weka</span>
           <span class="tag">RapidMiner</span>
@@ -372,41 +389,28 @@
   <div class="container">
     <h2 class="mb-5">Selected Publications</h2>
 
-    <h3 class="mb-3">Journal Publications</h3>
-    <ul class="fa-ul mb-4">
-      <li>
-        <span class="fa-li"><i class="fas fa-book"></i></span>
-        <a href="YOUR_JOURNAL_LINK_1" target="_blank" rel="noopener">
-          Semi-Supervised Anomaly Detection and Localization for Railway Steel Bridges
-        </a><br>
-        <small>
-          <em>Under submission</em> | Submitted: 2026
-        </small>
-      </li>
-
-      <li>
-        <span class="fa-li"><i class="fas fa-book"></i></span>
-        <a href="https://www.mdpi.com/1424-8220/26/13/4323" target="_blank" rel="noopener">
-          Vibration-Based Machine Learning Model Training for Railway Bridges Health Monitoring
-        </a><br>
-        <small>
-          <em>Sensors(26)</em> | Published: July 2026
-        </small>
-      </li>
-    </ul>
-
-    <h3 class="mb-3">Conference Publications</h3>
-    <ul class="fa-ul mb-0">
-      <li>
-        <span class="fa-li"><i class="fas fa-book"></i></span>
-        <a href="https://ceur-ws.org/Vol-3670/paper101.pdf" target="_blank" rel="noopener">
-          RBF Based NN Architecture for Structural Health Analysis of Railway Steel Bridges
-        </a><br>
-        <small>
-          22nd AIxIA 22nd International Conference of the Italian Association for Artificial Intelligence | Conference Date: November 2023
-        </small>
-      </li>
-    </ul>
+    <p class="text-secondary">Filter publications by type and status. Verify publisher details before using them in formal documents.</p>
+    <div class="filter-bar" id="publicationFilters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="journal">Journal</button>
+      <button class="filter-btn" data-filter="conference">Conference</button>
+      <button class="filter-btn" data-filter="submitted">Under submission</button>
+    </div>
+    <article class="publication-item" data-publication="journal submitted">
+      <div class="project-meta">Journal manuscript · Under submission</div>
+      <h3 class="h5 mb-1">Semi-Supervised Anomaly Detection and Localization for Railway Steel Bridges</h3>
+      <div class="pub-meta">Submitted: 2026 · A public link will be added after a preprint or publisher page is available.</div>
+    </article>
+    <article class="publication-item" data-publication="journal published">
+      <div class="project-meta">Journal publication</div>
+      <h3 class="h5 mb-1"><a href="https://www.mdpi.com/1424-8220/26/13/4323" target="_blank" rel="noopener noreferrer">Vibration-Based Machine Learning Model Training for Railway Bridge Health Monitoring</a></h3>
+      <div class="pub-meta"><em>Sensors</em> · Published: July 2026</div>
+    </article>
+    <article class="publication-item" data-publication="conference published">
+      <div class="project-meta">Conference publication</div>
+      <h3 class="h5 mb-1"><a href="https://ceur-ws.org/Vol-3670/paper101.pdf" target="_blank" rel="noopener noreferrer">RBF-Based Neural Network Architecture for Structural Health Analysis of Railway Steel Bridges</a></h3>
+      <div class="pub-meta">AIxIA Doctoral Consortium · Conference date: November 2023</div>
+    </article>
   </div>
 </section>
     <hr class="m-0"/>
@@ -422,6 +426,7 @@
           <button class="filter-btn" data-filter="neural">Neural Engineering</button>
           <button class="filter-btn" data-filter="disaster">Disaster Intelligence</button>
           <button class="filter-btn" data-filter="multimodal">Multimodal AI</button>
+          <button class="filter-btn" data-filter="policy">Policy Intelligence</button>
         </div>
         <div class="row g-3">
           <div class="col-md-6 project-item" data-category="shm">
@@ -430,6 +435,14 @@
               <h4 class="h5">COMM NET Railway Bridge Monitoring</h4>
               <p class="mb-2">Time and frequency domain feature extraction and deep fusion models for damage localization and alert generation.</p>
               <button class="btn btn-sm btn-outline-primary project-details" data-project="bridge">View project brief</button>
+            </div>
+          </div>
+          <div class="col-md-6 project-item" data-category="policy">
+            <div class="p-4 portfolio-card h-100">
+              <div class="project-meta mb-2">Policy Intelligence · NLP</div>
+              <h4 class="h5">Public Sentiment Analysis for Policy Support</h4>
+              <p class="mb-2">NLP-based analysis of aggregate public views to identify themes and support evidence-informed policy discussion.</p>
+              <button class="btn btn-sm btn-outline-primary project-details" data-project="policy">View project brief</button>
             </div>
           </div>
           <div class="col-md-6 project-item" data-category="neural">
@@ -474,7 +487,7 @@
     <section class="resume-section" id="supervision">
       <div class="container">
         <h2 class="mb-2">Student Supervision</h2>
-        <p class="text-secondary mb-4">Research supervision grouped by academic level. Replace the marked fields with verified student names, project titles, institutions, and completion years.</p>
+        <p class="text-secondary mb-4">Research supervision is grouped by academic level. Select a tab to view the available records.</p>
         <div class="filter-bar" role="tablist" aria-label="Supervision level">
           <button class="filter-btn active supervision-tab" data-level="bs" role="tab">BS</button>
           <button class="filter-btn supervision-tab" data-level="ms" role="tab">MS</button>
@@ -498,7 +511,7 @@
             <article class="academic-item"><span class="badge text-bg-primary mb-2">Summer School</span><h4 class="h5 mb-1">European Agent Systems Summer School</h4><p class="mb-0 text-secondary">CTU Prague · 2023</p></article>
           </div>
           <div class="col-md-6 development-item" data-search="workshop details to be added">
-            <article class="empty-note"><strong>Consciousness-Curriculum (CC) Framework</strong><br>Faculty Development Program (FDP) Training Workshop on the Consciousness-Curriculum (CC) Framework</h4><p class="mb-0 text-secondary">BNU , Lahore · 23 June 2026</p></article>
+            <article class="academic-item"><span class="badge text-bg-primary mb-2">Faculty Development</span><h4 class="h5 mb-1">Consciousness-Curriculum (CC) Framework</h4><p class="mb-0 text-secondary">Faculty Development Program training workshop · BNU, Lahore · 23 June 2026</p></article>
           </div>
         </div>
         <h3 class="mb-3">Certified Courses</h3>
@@ -574,6 +587,7 @@
       neural:{title:'Neural Signal Interfaces',area:'Neural Engineering',brief:'Research on decoding EEG and EMG signals for assistive human–machine interfaces and neurorehabilitation applications.',methods:['EEG/EMG preprocessing','Time-series feature extraction','Machine learning classification','Assistive interface design'],outcome:'Robust neural-signal representations for responsive assistive and rehabilitation systems.'},
       disaster:{title:'AI-Based Disaster Monitoring and Early Alerts',area:'Disaster Intelligence',brief:'An applied monitoring framework combining heterogeneous sensors, anomaly detection, and decision rules to turn streaming observations into early risk information.',methods:['Sensor integration','Streaming analytics','Anomaly detection','Fuzzy rule-based alerts'],outcome:'A decision-support layer intended to improve situational awareness and the timeliness of precautionary action.'},
       fusion:{title:'LiDAR and mmWave Sensor Fusion',area:'Multimodal AI',brief:'A multimodal perception project combining LiDAR geometry with mmWave sensing to improve representation quality and robustness under varying environmental conditions.',methods:['Point-cloud processing','mmWave signal analysis','Multimodal feature fusion','Predictive modelling'],outcome:'Complementary sensor representations for more reliable intelligent perception.'},
+      policy:{title:'Public Sentiment Analysis for Policy Support',area:'Policy Intelligence',brief:'An NLP-based project that analyses aggregate public feedback to identify recurring themes, changes in concern, and signals that can support policy discussion.',methods:['Text preprocessing','Sentiment and theme analysis','Dashboard reporting','Human review and privacy safeguards'],outcome:'An aggregate decision-support view designed to inform discussion without profiling individual citizens.'},
       rbf:{title:'RBF Neural Architecture for Structural Analysis',area:'Machine Learning for SHM',brief:'RBF-based neural modelling for structural response analysis and health assessment, with emphasis on interpretable condition indicators.',methods:['RBF neural networks','Structural feature analysis','Model validation','Condition classification'],outcome:'A compact neural architecture for structural condition assessment and research comparison.'}
     };
     const supervisionData = {
@@ -581,7 +595,7 @@
     {
       status: 'Completed',
       name: 'Muhammad Arham, Hamza Manzoor',
-      topic: 'AquaSentinel: Early Flood Warning and Moniotirng System',
+      topic: 'AquaSentinel: Early Flood Warning and Monitoring System',
       meta: 'BNU Lahore · 2025–2026'
     },
     {
@@ -600,7 +614,6 @@
       meta: 'University of Lahore · 2017–2018'
     }
 
-    // Add further MS supervision records here
   ],
 
   phd: [
@@ -611,9 +624,7 @@
       meta: 'Institution · Year'
     }
 
-    // Add actual PhD supervision records here
   ]
-};
     };
     const courses=[
       ['Engineering of Structures: Tension','Dartmouth College · Coursera','March 2024','https://www.coursera.org/account/accomplishments/records/7K8R2AF7V6T2'],
@@ -644,6 +655,10 @@
     document.querySelectorAll('#projectFilters .filter-btn').forEach(btn=>btn.addEventListener('click',()=>{
       document.querySelectorAll('#projectFilters .filter-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');
       document.querySelectorAll('.project-item').forEach(card=>card.classList.toggle('d-none',btn.dataset.filter!=='all'&&card.dataset.category!==btn.dataset.filter));
+    }));
+    document.querySelectorAll('#publicationFilters .filter-btn').forEach(btn=>btn.addEventListener('click',()=>{
+      document.querySelectorAll('#publicationFilters .filter-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');
+      document.querySelectorAll('[data-publication]').forEach(item=>item.classList.toggle('d-none',btn.dataset.filter!=='all'&&!item.dataset.publication.includes(btn.dataset.filter)));
     }));
     document.querySelectorAll('.project-details').forEach(btn=>btn.addEventListener('click',()=>{
       const p=projectData[btn.dataset.project];document.querySelector('#projectModalTitle').textContent=p.title;
